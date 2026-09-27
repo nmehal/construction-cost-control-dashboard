@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Construction Cost Control Dashboard — Demo</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>Brighton Renovation — Cost Control Dashboard</h1>
+  <p>Fictional Victorian residential project (demo only) — <strong>All monetary values are in AUD (GST included); no tax/compliance claim</strong></p>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button onclick="showTab('summary')" class="tab active">Summary</button>
+  <button onclick="showTab('variations')" class="tab">Variations</button>
+  <button onclick="showTab('subcontractors')" class="tab">Subcontractors</button>
+  <button onclick="showTab('claims')" class="tab">Progress Claims</button>
+  <button onclick="showTab('budget')" class="tab">Budget</button>
+  <button onclick="showTab('warnings')" class="tab">Warnings</button>
+</nav>
+
+<main>
+<section id="summary" class="tab-panel active">
+  <div class="kpi-grid">
+    <div class="kpi"><h3>Contract Value</h3><p id="k-contract">—</p></div>
+    <div class="kpi"><h3>Revised Value</h3><p id="k-revised">—</p></div>
+    <div class="kpi"><h3>Variation Exposure</h3><p id="k-exposure">—</p></div>
+    <div class="kpi"><h3>Forecast Margin %</h3><p id="k-margin-pct">—</p></div>
+    <div class="kpi"><h3>Outstanding Receivables</h3><p id="k-receivables">—</p></div>
+    <div class="kpi"><h3>Outstanding Commitments</h3><p id="k-commitments">—</p></div>
+  </div>
+  <h2>Project Summary</h2>
+  <table id="summary-table"></table>
+</section>
+
+<section id="variations" class="tab-panel">
+  <h2>Variation Register</h2>
+  <label>Filter status: <select id="var-filter" onchange="renderVariations()"><option>All</option><option>Approved</option><option>Pending</option><option>Draft</option><option>Submitted</option><option>Rejected</option></select></label>
+  <table id="var-table"></table>
+  <h3>Total Approved Variations: $<span id="var-approved">0</span></h3>
+  <h3>Pending/Draft Exposure: $<span id="var-pending">0</span></h3>
+</section>
+
+<section id="subcontractors" class="tab-panel">
+  <h2>Subcontractor Register</h2>
+  <label>Filter trade: <select id="sub-filter" onchange="renderSubs()"><option>All</option></select></label>
+  <table id="sub-table"></table>
+</section>
+
+<section id="claims" class="tab-panel">
+  <h2>Progress Claims</h2>
+  <label>Filter status: <select id="claim-filter" onchange="renderClaims()"><option>All</option><option>Paid</option><option>Issued</option><option>Overdue</option><option>Draft</option></select></label>
+  <table id="claim-table"></table>
+  <h3>Outstanding Receivables: $<span id="claim-receivables">0</span></h3>
+</section>
+
+<section id="budget" class="tab-panel">
+  <h2>Budget vs Committed vs Actual</h2>
+  <table id="budget-table"></table>
+</section>
+
+<section id="warnings" class="tab-panel">
+  <h2>Warnings</h2>
+  <ul id="warnings-list"></ul>
+</section>
+</main>
+
+<script src="js/app.js?v=3"></script>
+</body>
+</html>

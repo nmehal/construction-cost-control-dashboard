@@ -1,0 +1,59 @@
+{
+  "project_name": "Brighton Renovation — Demo Project",
+  "client": "Fictional Client (Demo)",
+  "suburb": "Brighton, Victoria",
+  "contract_value": 420000,
+  "start_date": "2026-03-15",
+  "target_completion": "2026-10-30",
+  "status": "In Progress",
+  "gst_note": "All figures include GST; no tax/compliance advice",
+  "budget_categories": [
+    {"category":"Site Preparation","budget":22000,"committed":23500,"actual":21000},
+    {"category":"Structural / Framing","budget":58000,"committed":62000,"actual":41000},
+    {"category":"Brickwork & Masonry","budget":34000,"committed":34000,"actual":28000},
+    {"category":"Roofing","budget":31000,"committed":31000,"actual":31000},
+    {"category":"Windows & Glazing","budget":42000,"committed":44000,"actual":22000},
+    {"category":"Electrical","budget":28000,"committed":28000,"actual":19000},
+    {"category":"Plumbing","budget":26000,"committed":26000,"actual":17000},
+    {"category":"Joinery & Cabinetry","budget":52000,"committed":52000,"actual":15000},
+    {"category":"Flooring","budget":24000,"committed":24000,"actual":8000},
+    {"category":"Painting & Finishes","budget":22000,"committed":22000,"actual":0},
+    {"category":"Landscaping","budget":15000,"committed":15000,"actual":0},
+    {"category":"Contingency","budget":26000,"committed":8000,"actual":0}
+  ],
+  "original_cost_budget": 394000,
+  "forecast_uncommitted_costs": 42000,
+  "variations": [
+    {"id":"V-01","date":"2026-04-10","description":"Upgrade kitchen benchtop to engineered stone","requested_by":"Client","cost":5200,"margin":780,"total":5980,"status":"Approved","approval_date":"2026-04-22","notes":"Includes splashback upgrade"},
+    {"id":"V-02","date":"2026-05-05","description":"Extend outdoor decking by 2.5m","requested_by":"Client","cost":6800,"margin":1020,"total":7820,"status":"Approved","approval_date":"2026-05-18","notes":""},
+    {"id":"V-03","date":"2026-05-20","description":"Add underfloor heating to ensuite","requested_by":"Client","cost":3100,"margin":465,"total":3565,"status":"Approved","approval_date":"2026-06-01","notes":""},
+    {"id":"V-04","date":"2026-06-08","description":"Upgrade bathroom fixtures (2 bathrooms)","requested_by":"Client","cost":4200,"margin":630,"total":4830,"status":"Submitted","approval_date":"","notes":"Awaiting client decision"},
+    {"id":"V-05","date":"2026-06-28","description":"Replace 3 windows with double-glazed acoustic units","requested_by":"Builder","cost":2900,"margin":435,"total":3335,"status":"Pending","approval_date":"","notes":"Noise complaint near road"},
+    {"id":"V-06","date":"2026-07-12","description":"Add built-in wardrobe (master bedroom)","requested_by":"Client","cost":4500,"margin":675,"total":5175,"status":"Draft","approval_date":"","notes":"Quote pending"},
+    {"id":"V-07","date":"2026-07-30","description":"Upgrade driveway paving","requested_by":"Client","cost":3800,"margin":570,"total":4370,"status":"Pending","approval_date":"","notes":""},
+    {"id":"V-08","date":"2026-08-15","description":"Electrical: add 4 extra downlights + dimmer","requested_by":"Client","cost":1200,"margin":180,"total":1380,"status":"Draft","approval_date":"","notes":""},
+    {"id":"V-09","date":"2026-08-28","description":"Landscaping: retaining wall","requested_by":"Builder","cost":5600,"margin":840,"total":6440,"status":"Submitted","approval_date":"","notes":"Slope stabilisation required"},
+    {"id":"V-10","date":"2026-09-05","description":"Painting: feature wall finishes","requested_by":"Client","cost":850,"margin":128,"total":978,"status":"Draft","approval_date":"","notes":""}
+  ],
+  "subcontractors": [
+    {"trade":"Site Preparation","name":"Coastal Earthworks (Demo)","scope":"Excavation & site prep","allowance":22000,"committed":23500,"paid":21000,"status":"In Progress","notes":"Over allowance due to rock removal"},
+    {"trade":"Structural","name":"Brighton Framing (Demo)","scope":"Timber framing","allowance":58000,"committed":62000,"paid":41000,"status":"In Progress","notes":"Variation approved, extra cost"},
+    {"trade":"Brickwork","name":"Vic Masonry (Demo)","scope":"Brick veneer","allowance":34000,"committed":34000,"paid":28000,"status":"In Progress","notes":""},
+    {"trade":"Roofing","name":"Coastal Roofing (Demo)","scope":"Colorbond roof","allowance":31000,"committed":31000,"paid":31000,"status":"Complete","notes":""},
+    {"trade":"Windows","name":"Brighton Glazing (Demo)","scope":"Aluminium windows","allowance":42000,"committed":44000,"paid":22000,"status":"In Progress","notes":"Variation pending for acoustic upgrade"},
+    {"trade":"Electrical","name":"Brighton Electrics (Demo)","scope":"Wiring & fixtures","allowance":28000,"committed":28000,"paid":19000,"status":"In Progress","notes":""},
+    {"trade":"Plumbing","name":"Coastal Plumbing (Demo)","scope":"Rough-in & fixtures","allowance":26000,"committed":26000,"paid":17000,"status":"In Progress","notes":""},
+    {"trade":"Joinery","name":"Custom Joinery (Demo)","scope":"Kitchen & wardrobes","allowance":52000,"committed":52000,"paid":15000,"status":"In Progress","notes":"Variation pending for wardrobe"},
+    {"trade":"Flooring","name":"Brighton Floors (Demo)","scope":"Engineered timber","allowance":24000,"committed":24000,"paid":8000,"status":"In Progress","notes":""},
+    {"trade":"Painting","name":"Coastal Paint (Demo)","scope":"Internal / external","allowance":22000,"committed":22000,"paid":0,"status":"Not Started","notes":"Scheduled Oct"},
+    {"trade":"Landscaping","name":"Coastal Landscapes (Demo)","scope":"Garden & paving","allowance":15000,"committed":15000,"paid":0,"status":"Not Started","notes":"Variation pending for driveway"},
+    {"trade":"Contingency","name":"Contingency Reserve","scope":"Risk reserve","allowance":26000,"committed":8000,"paid":0,"status":"Allocated","notes":"Remaining for unknowns"}
+  ],
+  "claims": [
+    {"no":"C-01","stage":"Foundation & Frame","date":"2026-05-10","amount":68000,"status":"Paid","paid_date":"2026-05-18"},
+    {"no":"C-02","stage":"Lock-up","date":"2026-07-05","amount":112000,"status":"Paid","paid_date":"2026-07-18"},
+    {"no":"C-03","stage":"Fix-out (1)","date":"2026-08-15","amount":84000,"status":"Issued","paid_date":""},
+    {"no":"C-04","stage":"Fix-out (2)","date":"2026-09-20","amount":62000,"status":"Overdue","paid_date":""},
+    {"no":"C-05","stage":"Practical Completion","date":"2026-10-15","amount":48000,"status":"Draft","paid_date":""}
+  ]
+}

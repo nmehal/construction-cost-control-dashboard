@@ -3,6 +3,19 @@
 A portfolio demonstration of a lightweight construction project-financial-control dashboard for residential builders and renovation businesses.
 
 This project uses fictional Victorian project data only. It is not connected to any real client, builder or subcontractor.
+## Screenshots
+
+### Project Summary Dashboard
+
+![Construction Cost Control Dashboard](docs/screenshots/cost-control-dashboard.png)
+
+### Variation Register
+
+![Variation Register](docs/screenshots/variations.png)
+
+### Budget & Warnings
+
+![Budget and Warnings](docs/screenshots/budget-warnings.png)
 
 ## Business Problem
 
@@ -154,16 +167,4 @@ construction-cost-control-dashboard/
 │   └── screenshots/
 └── README.md
 
-## Screenshots
 
-### Project Summary Dashboard
-
-![Construction Cost Control Dashboard](docs/screenshots/cost-control-dashboard.png)
-
-### Variation Register
-
-![Variation Register](docs/screenshots/variations.png)
-
-### Budget & Warnings
-
-![Budget and Warnings](docs/screenshots/budget-warnings.png)

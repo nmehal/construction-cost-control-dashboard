@@ -153,3 +153,17 @@ construction-cost-control-dashboard/
 │   ├── test-results.md
 │   └── screenshots/
 └── README.md
+
+## Screenshots
+
+### Project Summary Dashboard
+
+![Construction Cost Control Dashboard](docs/screenshots/cost-control-dashboard.png)
+
+### Variation Register
+
+![Variation Register](docs/screenshots/variations.png)
+
+### Budget & Warnings
+
+![Budget and Warnings](docs/screenshots/budget-warnings.png)
